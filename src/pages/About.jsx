@@ -25,8 +25,8 @@ const About = () => {
           </h3>
           
           <p className="text-slate-700 dark:text-slate-300 mb-4">
-            I specialize in frontend development with React.js, but I'm also comfortable
-            working with backend technologies like Node.js and databases. I believe in writing
+            I specialize in backend development with Node.js and databases, but I'm also comfortable
+            working with frontend technologies like React.js. I believe in writing
             clean, maintainable code and creating applications that are both visually appealing
             and highly functional.
           </p>

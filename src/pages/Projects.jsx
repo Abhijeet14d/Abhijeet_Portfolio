@@ -1,16 +1,20 @@
 import { Github, ExternalLink } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
+import chatAppImage from '../assets/quicktalk.png'
+import notesAppImage from '../assets/notesapp.png';
+import portfolioImage from '../assets/portfolio.png';
+import secureLoginImage from '../assets/securelogin.png';
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Weather App',
-      description: 'A weather forecasting app that provides real-time weather updates and forecasts for any location using the OpenWeatherMap API.',
-      image: 'Weather App Screenshot',
-      technologies: ['React', 'Tailwind CSS', 'OpenWeatherMap API'],
-      githubLink: 'https://github.com/yourusername/weather-app',
-      liveLink: 'https://weather-app-demo.com',
+      title: 'QuickTalk - Chat Application',
+      description: 'A real-time chat application with private and group chat functionality, built using WebSocket technology.',
+      image: chatAppImage,
+      technologies: ['React', 'Socket.IO', 'Node.js', 'Tailwind CSS'],
+      githubLink: 'https://github.com/Abhijeet14d/Chat-App',
+      liveLink: 'https://quicktalk-njxn.onrender.com/',
     },
     {
       id: 2,
@@ -23,37 +27,37 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Chat Application',
-      description: 'A real-time chat application with private and group chat functionality, built using WebSocket technology.',
-      image: 'Chat Application Screenshot',
-      technologies: ['React', 'Socket.IO', 'Node.js', 'Tailwind CSS'],
-      githubLink: 'https://github.com/yourusername/chat-application',
-      liveLink: 'https://chat-application-demo.com',
+      title: 'Note Taking App',
+      description: 'A simple note-taking application that allows users to create, edit, and delete notes.',
+      image: notesAppImage,
+      technologies: ['React', 'Tailwind CSS', 'Express', 'MongoDB'],
+      githubLink: 'https://github.com/Abhijeet14d/NotesApp',
+      liveLink: 'https://weather-app-demo.com',
     },
     {
       id: 4,
       title: 'Portfolio Website',
       description: 'A personal portfolio website to showcase my projects, skills, and experience, with a responsive design.',
-      image: 'Portfolio Website Screenshot',
+      image: portfolioImage,
       technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
-      githubLink: 'https://github.com/yourusername/portfolio-website',
-      liveLink: 'https://portfolio-website-demo.com',
+      githubLink: 'https://github.com/Abhijeet14d/Abhijeet_Portfolio',
+      liveLink: 'www.abhijeetsingh123.me',
     },
     {
       id: 5,
-      title: 'Task Manager',
-      description: 'A task management app to organize and prioritize tasks, with features like drag-and-drop and due date reminders.',
-      image: 'Task Manager Screenshot',
-      technologies: ['React', 'Redux', 'Firebase', 'Tailwind CSS'],
-      githubLink: 'https://github.com/yourusername/task-manager',
-      liveLink: 'https://task-manager-demo.com',
+      title: 'Secure login',
+      description: 'An authentication system that allows users to securely log in and manage their accounts.',
+      image: secureLoginImage,
+      technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'Chakra UI'],
+      githubLink: 'https://github.com/Abhijeet14d/SecureLogin',
+      liveLink: 'https://securelogin-8uzd.onrender.com/',
     },
     {
       id: 6,
-      title: 'Blog Platform',
-      description: 'A blogging platform where users can create, edit, and share blog posts, with a rich text editor and comment system.',
+      title: 'Weather App',
+      description: 'A weather forecasting app that provides real-time weather updates and forecasts for any location using the OpenWeatherMap API.',
       image: 'Blog Platform Screenshot',
-      technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Quill.js'],
+      technologies: ['React', 'Tailwind CSS', 'OpenWeatherMap API'],
       githubLink: 'https://github.com/yourusername/blog-platform',
       liveLink: 'https://blog-platform-demo.com',
     },
@@ -70,8 +74,7 @@ const Projects = () => {
         {projects.map(project => (
           <div key={project.id} className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
             <div className="h-48 bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
-              {/* Replace with actual project images */}
-              <div className="text-slate-500 dark:text-slate-400">{project.image}</div>
+              <img src={project.image} alt={project.title} className="object-contain h-full w-full" />
             </div>
             
             <div className="p-6">
