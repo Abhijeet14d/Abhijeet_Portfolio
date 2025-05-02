@@ -4,12 +4,14 @@ import chatAppImage from '../assets/quicktalk.png'
 import notesAppImage from '../assets/notesapp.png';
 import portfolioImage from '../assets/portfolio.png';
 import secureLoginImage from '../assets/securelogin.png';
+import docontimeImage from '../assets/docontime.png';
+import weatherAppImage from '../assets/weather.png';
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'QuickTalk - Chat Application',
+      title: 'QuickTalk',
       description: 'A real-time chat application with private and group chat functionality, built using WebSocket technology.',
       image: chatAppImage,
       technologies: ['React', 'Socket.IO', 'Node.js', 'Tailwind CSS'],
@@ -18,12 +20,12 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'E-Commerce Platform',
-      description: 'A fully functional e-commerce platform with user authentication, product management, and payment integration.',
-      image: 'E-Commerce Platform Screenshot',
+      title: 'DoctorOnTime',
+      description: 'A doctor appointment booking platform that connects patients with healthcare professionals, allowing users to book appointments online.',
+      image: docontimeImage,
       technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe API'],
-      githubLink: 'https://github.com/yourusername/ecommerce-platform',
-      liveLink: 'https://ecommerce-platform-demo.com',
+      githubLink: 'https://github.com/Adarsh097/DoctorOnTime?tab=readme-ov-file',
+      liveLink: 'https://doctor-on-time-git-main-adarshgupta0601-gmailcoms-projects.vercel.app/',
     },
     {
       id: 3,
@@ -56,7 +58,7 @@ const Projects = () => {
       id: 6,
       title: 'Weather App',
       description: 'A weather forecasting app that provides real-time weather updates and forecasts for any location using the OpenWeatherMap API.',
-      image: 'Blog Platform Screenshot',
+      image: weatherAppImage,
       technologies: ['React', 'Tailwind CSS', 'OpenWeatherMap API'],
       githubLink: 'https://github.com/yourusername/blog-platform',
       liveLink: 'https://blog-platform-demo.com',
