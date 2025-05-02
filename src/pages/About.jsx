@@ -1,4 +1,6 @@
 import SectionHeading from '../components/SectionHeading';
+import profileImage from '../assets/profile.png';
+
 
 const About = () => {
   return (
@@ -9,9 +11,12 @@ const About = () => {
       />
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="bg-slate-200 dark:bg-slate-800 rounded-xl h-64 md:h-96 flex items-center justify-center">
-          {/* Replace with your actual image */}
-          <div className="text-slate-500 dark:text-slate-400">Profile Image Placeholder</div>
+        <div className="bg-slate-200 dark:bg-slate-800 rounded-xl h-100 md:h-200 flex items-center justify-center">
+          <img 
+            src={profileImage} 
+            alt="Profile" 
+            className="rounded-lg object-cover max-w-full h-auto"
+          />
         </div>
         
         <div>
