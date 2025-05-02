@@ -1,8 +1,15 @@
 import SectionHeading from '../components/SectionHeading';
+import { useState } from 'react';
 
 const VideoCV = () => {
-  // Replace with your actual video URL
-//   const videoUrl = "https://www.youtube.com/embed/your-video-id";
+  // Google Drive file ID extracted from your link
+  const fileId = "1kBgyDCM17ReGoekn1hVGyRPstcxW3xKS";
+  
+  // Direct embed URL using the file ID
+  const embedUrl = `https://drive.google.com/file/d/${fileId}/preview`;
+  
+  // State to track if the video is loading
+  const [isLoading, setIsLoading] = useState(true);
   
   return (
     <div className="container mx-auto px-4 py-16">
@@ -14,11 +21,21 @@ const VideoCV = () => {
       <div className="max-w-3xl mx-auto">
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
           <div className="aspect-w-16 aspect-h-9 mb-6">
-            <div className="w-full h-0 pt-[56.25%] bg-slate-200 dark:bg-slate-700 relative rounded-lg flex items-center justify-center">
-              {/* Replace with actual embedded video iframe */}
-              <div className="absolute inset-0 flex items-center justify-center text-slate-500 dark:text-slate-400">
-                Video player placeholder - Your video will be embedded here
-              </div>
+            <div className="w-full h-0 pt-[56.25%] relative rounded-lg overflow-hidden">
+              {isLoading && (
+                <div className="absolute inset-0 flex items-center justify-center bg-slate-200 dark:bg-slate-700">
+                  <div className="text-slate-500 dark:text-slate-400">Loading video...</div>
+                </div>
+              )}
+              <iframe 
+                src={embedUrl}
+                className="absolute inset-0 w-full h-full rounded-lg"
+                title="Video CV"
+                frameBorder="0"
+                allowFullScreen
+                allow="autoplay"
+                onLoad={() => setIsLoading(false)}
+              ></iframe>
             </div>
           </div>
           
