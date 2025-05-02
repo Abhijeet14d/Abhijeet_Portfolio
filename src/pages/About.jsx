@@ -20,11 +20,6 @@ const About = () => {
           </h3>
           
           <p className="text-slate-700 dark:text-slate-300 mb-4">
-            I am a software developer with X years of experience building web applications.
-            My journey in technology began when [your background story here].
-          </p>
-          
-          <p className="text-slate-700 dark:text-slate-300 mb-4">
             I specialize in frontend development with React.js, but I'm also comfortable
             working with backend technologies like Node.js and databases. I believe in writing
             clean, maintainable code and creating applications that are both visually appealing
@@ -32,26 +27,21 @@ const About = () => {
           </p>
           
           <p className="text-slate-700 dark:text-slate-300 mb-6">
-            When I'm not coding, I enjoy [your interests/hobbies]. I'm constantly learning new
-            technologies and techniques to improve my skills and stay current in this ever-evolving field.
+            I'm constantly learning new technologies and techniques to improve my skills and stay current in this ever-evolving field.
           </p>
           
           <div className="grid grid-cols-2 gap-4">
             <div>
               <h4 className="font-bold text-indigo-600 dark:text-indigo-400 mb-2">Location</h4>
-              <p className="text-slate-700 dark:text-slate-300">Your City, Country</p>
+              <p className="text-slate-700 dark:text-slate-300">Roorkee, Uttarakhand </p>
             </div>
             <div>
               <h4 className="font-bold text-indigo-600 dark:text-indigo-400 mb-2">Email</h4>
-              <p className="text-slate-700 dark:text-slate-300">your.email@example.com</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-indigo-600 dark:text-indigo-400 mb-2">Experience</h4>
-              <p className="text-slate-700 dark:text-slate-300">X Years</p>
+              <p className="text-slate-700 dark:text-slate-300">abhijeetsingh28004@gmail.com</p>
             </div>
             <div>
               <h4 className="font-bold text-indigo-600 dark:text-indigo-400 mb-2">Availability</h4>
-              <p className="text-slate-700 dark:text-slate-300">Full-time / Freelance / etc.</p>
+              <p className="text-slate-700 dark:text-slate-300">Internship</p>
             </div>
           </div>
         </div>

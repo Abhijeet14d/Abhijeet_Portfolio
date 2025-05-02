@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className="bg-white dark:bg-slate-800 shadow-md py-4 sticky top-0 z-50">
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <NavLink to="/" className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
-          YourName
+          Abhijeet Singh
         </NavLink>
 
         {/* Desktop Menu */}

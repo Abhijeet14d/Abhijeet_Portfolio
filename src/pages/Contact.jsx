@@ -19,7 +19,7 @@ const Contact = () => {
     e.preventDefault();
     // In a real application, you would handle form submission here
     console.log('Form submitted:', formData);
-    alert('Thanks for your message! This is a demo, so the form does not actually submit.');
+    alert('Thanks for your message!');
     // Reset form
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
@@ -39,7 +39,7 @@ const Contact = () => {
             </div>
             <div>
               <h3 className="text-lg font-medium text-slate-900 dark:text-slate-100 mb-1">Location</h3>
-              <p className="text-slate-600 dark:text-slate-400">Your City, Country</p>
+              <p className="text-slate-600 dark:text-slate-400">Roorkee, Uttarakhand</p>
             </div>
           </div>
           
@@ -49,7 +49,7 @@ const Contact = () => {
             </div>
             <div>
               <h3 className="text-lg font-medium text-slate-900 dark:text-slate-100 mb-1">Email</h3>
-              <p className="text-slate-600 dark:text-slate-400">your.email@example.com</p>
+              <p className="text-slate-600 dark:text-slate-400">abhijeetsingh28004@gmail.com</p>
             </div>
           </div>
           
@@ -59,14 +59,14 @@ const Contact = () => {
             </div>
             <div>
               <h3 className="text-lg font-medium text-slate-900 dark:text-slate-100 mb-1">Phone</h3>
-              <p className="text-slate-600 dark:text-slate-400">+1 234 567 890</p>
+              <p className="text-slate-600 dark:text-slate-400">+91 9027451672</p>
             </div>
           </div>
           
           <div className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md">
             <h3 className="text-lg font-medium text-slate-900 dark:text-slate-100 mb-3">Resume</h3>
             <a 
-              href="https://drive.google.com/file/d/your-resume-file-id/view?usp=sharing" 
+              href="https://docs.google.com/document/d/1uLoG7zSmeMtQ2mIQ9sWcwGKQabZNMflkRyLuvt6t0kg/edit?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-flex items-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"

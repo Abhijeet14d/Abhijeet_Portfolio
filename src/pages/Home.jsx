@@ -6,7 +6,7 @@ const Home = () => {
     <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-indigo-50 to-slate-100 dark:from-slate-900 dark:to-indigo-950 px-4">
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-6">
-          Hi, I'm <span className="text-indigo-600 dark:text-indigo-400">Your Name</span>
+          Hi, I'm <span className="text-indigo-600 dark:text-indigo-400">Abhijeet Singh</span>
         </h1>
         <h2 className="text-2xl md:text-3xl text-slate-700 dark:text-slate-300 mb-8">
           Software Developer
