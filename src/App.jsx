@@ -23,6 +23,11 @@ function App() {
           <Route path="/video-cv" element={<VideoCV />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+        <Contact />
         <Footer />
       </div>
     </Router>
