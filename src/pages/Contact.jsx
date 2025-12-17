@@ -38,10 +38,11 @@ const Contact = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-20">
-      <SectionHeading title="Contact Me" subtitle="Let's discuss your project or job opportunity" />
+    <div className="py-20 bg-slate-50 dark:bg-slate-950">
+      <div className="container mx-auto px-4">
+        <SectionHeading title="Contact Me" subtitle="Let's discuss your project or job opportunity" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <div className="lg:col-span-1 space-y-6">
           {/* Contact Info Cards */}
           <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-slate-100 dark:border-slate-700 hover:shadow-xl transition-shadow">
@@ -225,6 +226,7 @@ const Contact = () => {
               </form>
             )}
           </div>
+        </div>
         </div>
       </div>
     </div>

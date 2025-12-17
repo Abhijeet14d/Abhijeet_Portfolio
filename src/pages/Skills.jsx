@@ -158,18 +158,19 @@ const Skills = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-20">
-      <SectionHeading title="My Skills" subtitle="Technologies and tools I work with" />
+    <div className="py-20 bg-slate-50 dark:bg-slate-950">
+      <div className="container mx-auto px-4">
+        <SectionHeading title="My Skills" subtitle="Technologies and tools I work with" />
 
-      {/* Tab Navigation */}
-      <div className="mb-12 flex justify-center">
-        <div className="bg-white dark:bg-slate-800 p-1.5 rounded-xl shadow-md inline-flex flex-wrap justify-center">
+        {/* Tab Navigation */}
+        <div className="mb-12 flex justify-center">
+        <div className="bg-white dark:bg-slate-800 p-2 rounded-2xl shadow-lg inline-flex flex-wrap justify-center">
           <button
             onClick={() => setActiveTab("technical")}
-            className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-2 m-1 ${
+            className={`px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 flex items-center gap-2 m-1 ${
               activeTab === "technical"
-                ? "bg-gradient-to-r from-emerald-600 to-sky-600 text-white shadow-md"
-                : "bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600"
+                ? "bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 text-white shadow-lg scale-105"
+                : "text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
             }`}
           >
             <Terminal className="h-4 w-4" />
@@ -177,10 +178,10 @@ const Skills = () => {
           </button>
           <button
             onClick={() => setActiveTab("tools")}
-            className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-2 m-1 ${
+            className={`px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 flex items-center gap-2 m-1 ${
               activeTab === "tools"
-                ? "bg-gradient-to-r from-sky-600 to-amber-600 text-white shadow-md"
-                : "bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600"
+                ? "bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 text-white shadow-lg scale-105"
+                : "text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
             }`}
           >
             <Server className="h-4 w-4" />
@@ -188,16 +189,17 @@ const Skills = () => {
           </button>
           <button
             onClick={() => setActiveTab("soft")}
-            className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-2 m-1 ${
+            className={`px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 flex items-center gap-2 m-1 ${
               activeTab === "soft"
-                ? "bg-gradient-to-r from-amber-600 to-emerald-600 text-white shadow-md"
-                : "bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600"
+                ? "bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 text-white shadow-lg scale-105"
+                : "text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
             }`}
           >
             <Users className="h-4 w-4" />
             Soft Skills
           </button>
         </div>
+      </div>
       </div>
 
       {/* Skills Content */}

@@ -105,16 +105,17 @@ const Projects = () => {
   }, [filteredProjects])
 
   return (
-    <div className="container mx-auto px-4 py-20">
-      <SectionHeading title="My Projects" subtitle="Check out some of my recent work" />
+    <div className="py-20 bg-white dark:bg-slate-900">
+      <div className="container mx-auto px-4">
+        <SectionHeading title="My Projects" subtitle="Check out some of my recent work" />
 
-      {/* Filter buttons */}
-      <div className="flex flex-wrap justify-center gap-2 mb-12">
+        {/* Filter buttons */}
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
         <button
           onClick={() => setFilter("all")}
-          className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+          className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
             filter === "all"
-              ? "bg-gradient-to-r from-emerald-600 via-sky-600 to-amber-600 text-white shadow-md"
+              ? "bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 text-white shadow-lg scale-105"
               : "bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700"
           }`}
         >
@@ -122,9 +123,9 @@ const Projects = () => {
         </button>
         <button
           onClick={() => setFilter("frontend")}
-          className={`px-4 py-2 rounded-full text-sm font-medium transition-all flex items-center gap-1 ${
+          className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all flex items-center gap-2 ${
             filter === "frontend"
-              ? "bg-amber-600 text-white shadow-md"
+              ? "bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 text-white shadow-lg scale-105"
               : "bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700"
           }`}
         >
@@ -133,9 +134,9 @@ const Projects = () => {
         </button>
         <button
           onClick={() => setFilter("backend")}
-          className={`px-4 py-2 rounded-full text-sm font-medium transition-all flex items-center gap-1 ${
+          className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all flex items-center gap-2 ${
             filter === "backend"
-              ? "bg-emerald-600 text-white shadow-md"
+              ? "bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 text-white shadow-lg scale-105"
               : "bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700"
           }`}
         >
@@ -144,15 +145,16 @@ const Projects = () => {
         </button>
         <button
           onClick={() => setFilter("fullstack")}
-          className={`px-4 py-2 rounded-full text-sm font-medium transition-all flex items-center gap-1 ${
+          className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all flex items-center gap-2 ${
             filter === "fullstack"
-              ? "bg-sky-600 text-white shadow-md"
+              ? "bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 text-white shadow-lg scale-105"
               : "bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700"
           }`}
         >
           <Server className="h-4 w-4" />
           Full Stack
         </button>
+      </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -30,36 +30,68 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="/"
+                <button
+                  onClick={() => {
+                    const element = document.getElementById("home")
+                    if (element) {
+                      const offset = 80
+                      const elementPosition = element.getBoundingClientRect().top
+                      const offsetPosition = elementPosition + window.pageYOffset - offset
+                      window.scrollTo({ top: offsetPosition, behavior: "smooth" })
+                    }
+                  }}
                   className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
                 >
                   Home
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="/about"
+                <button
+                  onClick={() => {
+                    const element = document.getElementById("about")
+                    if (element) {
+                      const offset = 80
+                      const elementPosition = element.getBoundingClientRect().top
+                      const offsetPosition = elementPosition + window.pageYOffset - offset
+                      window.scrollTo({ top: offsetPosition, behavior: "smooth" })
+                    }
+                  }}
                   className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
                 >
                   About
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="/projects"
+                <button
+                  onClick={() => {
+                    const element = document.getElementById("projects")
+                    if (element) {
+                      const offset = 80
+                      const elementPosition = element.getBoundingClientRect().top
+                      const offsetPosition = elementPosition + window.pageYOffset - offset
+                      window.scrollTo({ top: offsetPosition, behavior: "smooth" })
+                    }
+                  }}
                   className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
                 >
                   Projects
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="/contact"
+                <button
+                  onClick={() => {
+                    const element = document.getElementById("contact")
+                    if (element) {
+                      const offset = 80
+                      const elementPosition = element.getBoundingClientRect().top
+                      const offsetPosition = elementPosition + window.pageYOffset - offset
+                      window.scrollTo({ top: offsetPosition, behavior: "smooth" })
+                    }
+                  }}
                   className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
                 >
                   Contact
-                </a>
+                </button>
               </li>
             </ul>
           </div>
